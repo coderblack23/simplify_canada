@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simplify Canada - Custom ERP Solutions for SMBs</title>
+  <meta name="description" content="Low-cost, customizable ERP solutions for Canadian SMBs with user-friendly interfaces for older workforces">
+  <meta name="keywords" content="custom ERP for SMBs in Canada, affordable ERP solution, user-friendly ERP, ERP for older workforce">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/aos.css" rel="stylesheet">
+  <link href="assets/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center">
+      <a href="#" class="logo me-auto">
+        <h1 class="sitename">Simplify Canada</h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle bi bi-list"></i>
+      </nav>
+      <a href="#early-access-modal" class="btn-getstarted glightbox">Early Access</a>
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero section dark-background" data-aos="fade-up">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1>ERP Solutions Designed for Canadian SMBs</h1>
+          <p class="lead">Customizable software tailored for businesses with workforces aged 40+</p>
+          <a href="#early-access-modal" class="btn btn-primary glightbox">Get Early Access</a>
+        </div>
+        <div class="col-lg-6 hero-img">
+          <img src="assets/img/erp-dashboard.png" class="img-fluid" alt="ERP Dashboard">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit">Send Message</button>
+              <div class="loading">Sending...</div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Early Access Modal ======= -->
+  <div id="early-access-modal" class="lightbox-basic" style="display: none;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h3>Request Early Access</h3>
+          <form action="forms/early-access.php" method="post" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="business" class="form-control" placeholder="Business Name" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="industry" class="form-control" placeholder="Industry" required>
+            </div>
+            <div class="text-center">
+              <button type="submit">Submit Request</button>
+              <div class="loading">Processing...</div>
+              <div class="sent-message">Thank you for your interest! We'll be in touch.</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Simplify Canada</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Your Team</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="assets/js/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out'
+    });
+
+    // Initialize GLightbox
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true
+    });
+  </script>
+</body>
+</html>
