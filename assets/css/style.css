@@ -297,4 +297,79 @@
   background: #d4edda;
   color: #155724;
   border: 1px solid #c3e6cb;
+}
+
+/* Coming Soon Page Styles */
+.coming-soon-page .hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.coming-soon-page .hero h1 {
+  font-size: 64px;
+  margin-bottom: 30px;
+  background: linear-gradient(45deg, var(--accent-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coming-soon-page .hero p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.coming-soon-page .btn-outline {
+  background: transparent;
+  border: 2px solid var(--contrast-color);
+  color: var(--contrast-color);
+}
+
+.coming-soon-page .btn-outline:hover {
+  background: var(--contrast-color);
+  color: var(--dark-accent);
+}
+
+/* Subscribe Section */
+.subscribe {
+  padding: 80px 0;
+  background: var(--background-color);
+}
+
+.subscribe h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+}
+
+.subscribe p {
+  color: var(--default-color);
+  margin-bottom: 30px;
+}
+
+.subscribe .php-email-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.subscribe .form-control {
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 25px;
+  font-size: 16px;
+  border: 2px solid #eee;
+}
+
+.subscribe .form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: none;
+}
+
+.subscribe .btn-get-started {
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 30px;
 } 
