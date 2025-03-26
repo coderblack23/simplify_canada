@@ -850,14 +850,15 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding: 160px 0 120px;
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
   background: linear-gradient(135deg, #37517e 0%, #47b2e4 100%);
-  color: white;
+  padding: 180px 0 120px;
+  color: var(--contrast-color);
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .hero .container {
@@ -938,7 +939,7 @@ section,
 
 @media (max-width: 991px) {
   .hero {
-    padding: 140px 0 80px;
+    padding: 160px 0 80px;
     text-align: center;
     min-height: auto;
   }
