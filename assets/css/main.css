@@ -850,17 +850,14 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
-  min-height: 75vh;
-  background: linear-gradient(180deg, rgba(27, 54, 93, 0.8) 0%, rgba(27, 54, 93, 0.9) 100%), url("../img/hero-bg.jpg") center center;
-  background-size: cover;
-  padding: 80px 0;
-  color: var(--contrast-color);
-  position: relative;
-  overflow: hidden;
+  padding: 160px 0 120px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  background: linear-gradient(135deg, #37517e 0%, #47b2e4 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero .container {
@@ -941,8 +938,8 @@ section,
 
 @media (max-width: 991px) {
   .hero {
+    padding: 140px 0 80px;
     text-align: center;
-    padding: 40px 0;
     min-height: auto;
   }
 
@@ -3615,4 +3612,142 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+/* MVP Section Styles */
+.starter-section {
+  background: #37517e;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.starter-section .section-header {
+  margin-bottom: 50px;
+}
+
+.starter-section .section-header h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.starter-section .section-header p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.starter-section .btn-getstarted {
+  background: #47b2e4;
+  color: #fff;
+  padding: 12px 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.starter-section .btn-getstarted:hover {
+  background: #209dd8;
+  transform: translateY(-2px);
+}
+
+.steps-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.steps-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+}
+
+.steps-image {
+  margin-bottom: 20px;
+}
+
+.steps-image img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.steps-content {
+  position: relative;
+}
+
+.steps-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #47b2e4;
+  opacity: 0.2;
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.steps-content h3 {
+  color: #37517e;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.steps-features {
+  margin-top: 20px;
+}
+
+.steps-features p {
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.feature-item i {
+  color: #47b2e4;
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+.feature-item span {
+  color: #444444;
+}
+
+.feature-item .feature-title {
+  color: #37517e;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+  .starter-section {
+    padding: 60px 0;
+  }
+
+  .starter-section .section-header h2 {
+    font-size: 28px;
+  }
+
+  .steps-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .starter-section .section-header h2 {
+    font-size: 24px;
+  }
+
+  .steps-content h3 {
+    font-size: 20px;
+  }
 }
