@@ -7,7 +7,7 @@
   <title>Simplify Canada – Manage Your Business in One Solution</title>
   <meta name="description" content="Low-cost, customizable business management solutions for Canadian SMBs. Simplify operations and manage your business in one solution. Join our early access pilot – free for 3 months.">
   <meta name="keywords" content="custom ERP for SMBs in Canada, affordable business management, one solution, user-friendly system, Canadian small business">
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <!-- Fonts and Vendor CSS Files -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -49,10 +49,11 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Unlock Early Access. Simplify Your Business.</h1>
+            <h1>Simplify Your Business Operations</h1>
             <p>Join our MVP pilot program and discover an all-in-one solution designed for busy SMB owners in Halifax and across Canada. Get free access for 3 months and experience how easy it is to manage your business with a single, intuitive system.</p>
-            <div class="d-flex">
+            <div class="d-flex gap-3">
               <a href="#early-access-modal" class="btn-get-started">Join Early Access Now</a>
+              <a href="#benefits" class="btn-learn-more">Learn More</a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
@@ -526,6 +527,102 @@
 }
 .btn-getstarted:hover {
   transform: translateY(-2px);
+}
+
+/* Hero Section Styles */
+.hero {
+  padding: 120px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #37517e 0%, #47b2e4 100%);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-img {
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.btn-get-started {
+  background: #47b2e4;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+  background: #37517e;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-learn-more {
+  background: transparent;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+
+.btn-learn-more:hover {
+  background: white;
+  color: #37517e;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .hero-img {
+    margin-bottom: 2rem;
+  }
+  
+  .d-flex {
+    justify-content: center;
+  }
 }
 </style>
 
