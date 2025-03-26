@@ -537,6 +537,8 @@
   align-items: center;
   background: linear-gradient(135deg, #37517e 0%, #47b2e4 100%);
   color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -554,7 +556,18 @@
 
 .hero-img {
   position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img img {
   animation: float 6s ease-in-out infinite;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 @keyframes float {
@@ -606,6 +619,7 @@
   .hero {
     padding: 80px 0;
     text-align: center;
+    min-height: auto;
   }
   
   .hero h1 {
@@ -618,6 +632,7 @@
   
   .hero-img {
     margin-bottom: 2rem;
+    height: auto;
   }
   
   .d-flex {
