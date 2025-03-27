@@ -3,86 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simplify ERP - MVP Program</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Simplify Solutions - Streamline Your Business Operations</title>
+    <meta name="description" content="Join our MVP program to help shape a customizable, low-cost ERP built specifically for Halifax SMBs">
+    <meta name="keywords" content="ERP, Halifax, SMB, Business Software, MVP Program">
+
+    <!-- Favicons -->
+    <link href="assets/images/favicon.ico" rel="icon">
+    <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
+<body data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0">
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" alt="Simplify ERP Logo" height="40">
-                </a>
-                <button class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#earlyAccessModal">
-                    Early Access
-                </button>
-            </nav>
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/images/logo.png" alt="Simplify Solutions Logo">
+            </a>
+            <a class="btn-getstarted" href="home.html">View Full Website</a>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
+    <main class="main">
         <!-- MVP Section -->
-        <section class="starter-section">
-            <div class="container">
-                <div class="section-header text-center mb-5">
-                    <h1 class="display-4 fw-bold mb-4">MVP Program: Be Among the First to Shape the Future of ERP</h1>
-                    <p class="lead mb-4">Join our exclusive MVP program and get early access to Simplify ERP. Help us build the perfect solution for your business needs.</p>
-                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#earlyAccessModal">
-                        Join the MVP Program
-                    </button>
+        <section id="starter-section" class="starter-section section">
+            <div class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <h2 style="color: #fff; font-size: 32px; font-weight: 700; margin-bottom: 20px;">MVP Program: Be Among the First to Shape the Future of ERP</h2>
+                    <p style="color: rgba(255, 255, 255, 0.6); font-size: 16px; margin-bottom: 30px;">Join our exclusive MVP launch program and help shape a customizable, low-cost ERP built for SMBs like yours. Limited spots available!</p>
+                    <a href="#early-access-modal" class="btn-getstarted scrollto" style="background: #47b2e4; color: #fff;">Join Early Access Now</a>
                 </div>
-
-                <div class="row g-4">
-                    <!-- Step 1 -->
-                    <div class="col-md-4">
-                        <div class="steps-item">
-                            <div class="steps-icon">
-                                <img src="assets/images/step1.png" alt="Step 1" class="img-fluid">
+                <div class="row gy-5">
+                    <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <div class="steps-item" style="background: #fff;">
+                            <div class="steps-image">
+                                <img src="assets/images/steps-1.webp" alt="Step 1" class="img-fluid" loading="lazy">
                             </div>
-                            <h3 class="steps-title">1. Join the Program</h3>
-                            <p class="steps-text">Fill out our early access form and tell us about your business needs.</p>
-                            <ul class="feature-list">
-                                <li><i class="bi bi-check-circle-fill"></i> Exclusive early access</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Direct influence on features</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Priority support</li>
-                            </ul>
+                            <div class="steps-content">
+                                <div class="steps-number" style="color: #47b2e4;">01</div>
+                                <h3 style="color: #37517e;">Request Early Access</h3>
+                                <div class="steps-features">
+                                    <div class="feature-item">
+                                        <i class="bi bi-pin-angle-fill" style="color: #47b2e4;"></i>
+                                        <span style="color: #37517e;">"Share Your Business Needs"</span>
+                                    </div>
+                                    <p style="color: #444444;">Tell us about your business challenges - from finance to team management. Our ERP solution is designed specifically for Halifax SMBs.</p>
+                                    <div class="feature-item">
+                                        <i class="bi bi-check-circle" style="color: #47b2e4;"></i>
+                                        <span style="color: #444444;">No-risk exploration of our streamlined system</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="bi bi-check-circle" style="color: #47b2e4;"></i>
+                                        <span style="color: #444444;">Local expertise for Halifax businesses</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Step 2 -->
-                    <div class="col-md-4">
-                        <div class="steps-item">
-                            <div class="steps-icon">
-                                <img src="assets/images/step2.png" alt="Step 2" class="img-fluid">
+                    <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <div class="steps-item" style="background: #fff;">
+                            <div class="steps-image">
+                                <img src="assets/images/steps-2.webp" alt="Step 2" class="img-fluid" loading="lazy">
                             </div>
-                            <h3 class="steps-title">2. Discovery Call</h3>
-                            <p class="steps-text">Schedule a discovery call to discuss your specific requirements.</p>
-                            <ul class="feature-list">
-                                <li><i class="bi bi-check-circle-fill"></i> Personalized consultation</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Requirements analysis</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Custom solutions</li>
-                            </ul>
+                            <div class="steps-content">
+                                <div class="steps-number" style="color: #47b2e4;">02</div>
+                                <h3 style="color: #37517e;">Personalized Setup</h3>
+                                <div class="steps-features">
+                                    <div class="feature-item">
+                                        <i class="bi bi-pin-angle-fill" style="color: #47b2e4;"></i>
+                                        <span style="color: #37517e;">"Custom-Fit Solution"</span>
+                                    </div>
+                                    <p style="color: #444444;">Get a tailored ERP system that matches your exact needs. Easy to learn, simple to use - perfect for your team.</p>
+                                    <div class="feature-item">
+                                        <i class="bi bi-check-circle" style="color: #47b2e4;"></i>
+                                        <span style="color: #444444;">Step-by-step guidance and support</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="bi bi-check-circle" style="color: #47b2e4;"></i>
+                                        <span style="color: #444444;">Essential features without complexity</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Step 3 -->
-                    <div class="col-md-4">
-                        <div class="steps-item">
-                            <div class="steps-icon">
-                                <img src="assets/images/step3.png" alt="Step 3" class="img-fluid">
+                    <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                        <div class="steps-item" style="background: #fff;">
+                            <div class="steps-image">
+                                <img src="assets/images/steps-3.webp" alt="Step 3" class="img-fluid" loading="lazy">
                             </div>
-                            <h3 class="steps-title">3. Get Started</h3>
-                            <p class="steps-text">Begin using Simplify ERP and help shape its development.</p>
-                            <ul class="feature-list">
-                                <li><i class="bi bi-check-circle-fill"></i> Early access to features</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Regular updates</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Ongoing support</li>
-                            </ul>
+                            <div class="steps-content">
+                                <div class="steps-number" style="color: #47b2e4;">03</div>
+                                <h3 style="color: #37517e;">Shape the Future</h3>
+                                <div class="steps-features">
+                                    <div class="feature-item">
+                                        <i class="bi bi-pin-angle-fill" style="color: #47b2e4;"></i>
+                                        <span style="color: #37517e;">"Your Feedback Matters"</span>
+                                    </div>
+                                    <p style="color: #444444;">Use the system and help us improve. Your experience shapes the future of Halifax's premier ERP solution.</p>
+                                    <div class="feature-item">
+                                        <i class="bi bi-check-circle" style="color: #47b2e4;"></i>
+                                        <span style="color: #444444;">Direct access to local support team</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="bi bi-check-circle" style="color: #47b2e4;"></i>
+                                        <span style="color: #444444;">MVP benefits: priority support & special pricing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter-section py-5" style="background: #f3f5fa;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <h4 style="color: #37517e; font-size: 24px; font-weight: 600; margin-bottom: 15px;">Join Our Newsletter</h4>
+                            <p style="color: #444444; margin-bottom: 20px;">Stay updated with our latest features and release dates</p>
+                            <form action="forms/newsletter.php" method="post" class="newsletter-form">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Enter your email" style="padding: 12px 15px; border-radius: 50px 0 0 50px; border: 1px solid #dee2e6;">
+                                    <button class="btn btn-getstarted" type="submit" style="border-radius: 0 50px 50px 0; padding: 0 30px; background: #47b2e4; color: #fff; border: none;">Subscribe</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -91,95 +153,219 @@
     </main>
 
     <!-- Early Access Modal -->
-    <div class="modal fade" id="earlyAccessModal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
+    <div class="modal fade" id="early-access-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title">Join the MVP Program</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title">Join Our MVP Program</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="text-center mb-4">
-                        <p class="lead">Fill out the form below to join our MVP program and get early access to Simplify ERP.</p>
+                        <p class="lead">Fill out the form to join our MVP program and we'll schedule a discovery call</p>
+                        <p class="text-muted">Let's understand your business needs and customize the perfect solution for you</p>
                     </div>
-                    <form action="handlers/early_access.php" method="POST">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name" required>
-                                    <label for="name">Full Name</label>
+                
+                    <form action="handlers/early_access.php" method="POST" class="php-email-form">
+                        <div class="form-sections">
+                            <!-- Personal & Business Information -->
+                            <div class="steps-item mb-4">
+                                <div class="steps-content">
+                                    <div class="steps-number">01</div>
+                                    <h3 class="section-title">
+                                        <i class="bi bi-person-circle me-2"></i>Contact Information
+                                    </h3>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" name="fullName" class="form-control" id="fullName" placeholder="Your Name" required>
+                                                <label for="fullName">Full Name*</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
+                                                <label for="email">Email Address*</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="tel" class="form-control" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX">
+                                                <label for="phone">Phone Number</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" name="businessName" class="form-control" id="businessName" placeholder="Your Business" required>
+                                                <label for="businessName">Business Name*</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                    <label for="email">Email Address</label>
+
+                            <!-- Business Details -->
+                            <div class="steps-item mb-4">
+                                <div class="steps-content">
+                                    <div class="steps-number">02</div>
+                                    <h3 class="section-title">
+                                        <i class="bi bi-building me-2"></i>Business Information
+                                    </h3>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <select class="form-select" name="role" id="role" required>
+                                                    <option value="">Select Role</option>
+                                                    <option value="owner">Business Owner</option>
+                                                    <option value="manager">Manager</option>
+                                                    <option value="director">Director</option>
+                                                    <option value="supervisor">Supervisor</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                                <label for="role">Your Role*</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <select class="form-select" name="industry" id="industry" required>
+                                                    <option value="">Select Industry</option>
+                                                    <option value="retail">Retail</option>
+                                                    <option value="services">Services</option>
+                                                    <option value="manufacturing">Manufacturing</option>
+                                                    <option value="construction">Construction</option>
+                                                    <option value="hospitality">Hospitality</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                                <label for="industry">Industry*</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-floating">
+                                                <select class="form-select" name="employees" id="employees" required>
+                                                    <option value="">Select Range</option>
+                                                    <option value="1-5">1-5</option>
+                                                    <option value="6-20">6-20</option>
+                                                    <option value="21-50">21-50</option>
+                                                    <option value="50+">50+</option>
+                                                </select>
+                                                <label for="employees">Number of Employees*</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="tel" class="form-control" id="phone" name="phone" required>
-                                    <label for="phone">Phone Number</label>
+
+                            <!-- Business Challenges -->
+                            <div class="steps-item mb-4">
+                                <div class="steps-content">
+                                    <div class="steps-number">03</div>
+                                    <h3 class="section-title">
+                                        <i class="bi bi-chat-right-text me-2"></i>Your Business Needs
+                                    </h3>
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" name="challenges" id="challenges" style="height: 100px" placeholder="Your challenges" required></textarea>
+                                                <label for="challenges">Biggest Operational Challenges*</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" name="existingTools" id="existingTools" placeholder="Current tools">
+                                                <label for="existingTools">Current Tools/Software</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="company" name="company" required>
-                                    <label for="company">Company Name</label>
-                                </div>
+
+                            <!-- Terms Agreement -->
+                            <div class="form-text mb-4 text-center">
+                                By submitting this form, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.<br>
+                                Fields marked with * are required.
                             </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" name="message" style="height: 100px"></textarea>
-                                    <label for="message">Additional Information</label>
-                                </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn-getstarted">
+                                    <span>Submit & Schedule Call</span>
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="text-center mt-4">
-                            <button type="submit" class="btn btn-primary btn-lg">Submit & Schedule Call</button>
+
+                        <!-- Success Message with Booking Link -->
+                        <div class="sent-message text-center" style="display: none;">
+                            <i class="bi bi-check-circle-fill text-success mb-3" style="font-size: 3rem;"></i>
+                            <h4>Thank You!</h4>
+                            <p class="mb-4">Your information has been submitted successfully.</p>
+                            <div class="steps-item booking-section">
+                                <div class="steps-content text-center">
+                                    <h3>Schedule Your Discovery Call</h3>
+                                    <p class="mb-4">Choose a convenient time for your 30-minute discovery call with our team.</p>
+                                    <a href="YOUR_MICROSOFT_BOOKINGS_LINK" class="btn-getstarted" target="_blank">
+                                        <i class="bi bi-calendar-event me-2"></i>
+                                        <span>Schedule Now</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </form>
+                    <p class="mt-4 text-center text-muted">
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        For questions, email us at <a href="mailto:contact@simplifysolutions.ca">contact@simplifysolutions.ca</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="text-center">
-                <p class="mb-0">&copy; 2024 Simplify ERP. All rights reserved.</p>
-            </div>
+    <footer id="footer" class="footer">
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1" style="color: #47b2e4;">Simplify Solutions</strong> <span>All Rights Reserved</span></p>
         </div>
     </footer>
 
+    <!-- Scroll Top Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
     <script>
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Store form data in localStorage for pre-filling the Bookings form
-            const formData = new FormData(this);
-            for (let [key, value] of formData.entries()) {
-                localStorage.setItem(key, value);
-            }
-            // Hide form sections and show success message
-            this.style.display = 'none';
-            const successMessage = document.createElement('div');
-            successMessage.className = 'text-center';
-            successMessage.innerHTML = `
-                <div class="alert alert-success mb-4">
-                    <h4 class="alert-heading">Thank you for your interest!</h4>
-                    <p>We've received your information and look forward to speaking with you.</p>
-                </div>
-                <div class="booking-section">
-                    <h5 class="mb-3">Schedule Your Discovery Call</h5>
-                    <p class="mb-4">Let's discuss how Simplify ERP can help your business.</p>
-                    <a href="YOUR_MICROSOFT_BOOKINGS_LINK" class="btn btn-primary btn-lg" target="_blank">
-                        Schedule Now
-                    </a>
-                </div>
-            `;
-            this.parentNode.appendChild(successMessage);
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.php-email-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Collect form data
+                const formData = new FormData(form);
+                const formDataObj = {};
+                formData.forEach((value, key) => {
+                    formDataObj[key] = value;
+                });
+
+                // Here you would typically send the form data to your server
+                // For now, we'll just show the success message
+                const sentMessage = form.querySelector('.sent-message');
+                const formSections = form.querySelector('.form-sections');
+                
+                // Hide the form and show the success message with booking link
+                formSections.style.display = 'none';
+                sentMessage.style.display = 'block';
+
+                // You can also store the form data in localStorage or pass it to Microsoft Bookings
+                localStorage.setItem('mvpFormData', JSON.stringify(formDataObj));
+            });
         });
     </script>
 </body>
